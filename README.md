@@ -9,24 +9,22 @@
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
         body { font-family: 'Fredoka', sans-serif; }
 
-        /* --- CONFIGURACIÓN DE IMÁGENES --- */
         .logo-box { height: 60px; width: 140px; background-size: contain; background-position: center; background-repeat: no-repeat; }
-        .logo-modo-cyt { background-image: url('logo-modo-cyt.png'); }
-        .logo-agencia { background-image: url('logo-agencia.png'); }
+        .logo-modo-cyt { background-image: url('./logo-modo-cyt.png'); }
+        .logo-agencia { background-image: url('./logo-agencia.png'); }
 
         .card-img-container { height: 160px; background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #e5e7eb; }
         
-        /* ESTOS NOMBRES DEBEN COINCIDIR CON TUS ARCHIVOS EN GITHUB */
-        .img-inicial { background-image: url('inicial.jpg'); }
-        .img-matriz-led { background-image: url('matriz-led.png'); }
-        .img-circuitos-luz { background-image: url('circuitos-luz.png'); }
-        .img-huerta-inteligente { background-image: url('huerta-inteligente.png'); }
-        .img-auto-control-remoto { background-image: url('auto-control-remoto.png'); }
-        .img-otros { background-image: url('otros.jpg'); }
+        /* RUTAS RELATIVAS (Asegurate que el nombre coincida EXACTO en GitHub) */
+        .img-inicial { background-image: url('./inicial.jpg'); }
+        .img-matriz-led { background-image: url('./matriz-led.png'); }
+        .img-circuitos-luz { background-image: url('./circuitos-luz.png'); }
+        .img-huerta-inteligente { background-image: url('./huerta-inteligente.png'); }
+        .img-auto-control-remoto { background-image: url('./auto-control-remoto.png'); }
+        .img-otros { background-image: url('./otros.jpg'); }
 
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; }
         .active .accordion-content { max-height: 1000px; }
-        
         .label-nivel { font-size: 0.7rem; font-weight: bold; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
     </style>
 </head>
@@ -47,12 +45,11 @@
         <section class="bg-[#1d3557] text-white rounded-3xl p-6 mb-10 shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-[#a8dadc]">🚀 Sobre el Programa</h3>
             <p class="text-sm opacity-90 leading-relaxed">
-                Propuestas pedagógicas de la Secretaría de Ciencia y Tecnología para democratizar el acceso al conocimiento digital y hardware abierto en las escuelas de Tierra del Fuego.
+                Propuestas de la Secretaría de Ciencia y Tecnología para democratizar el acceso al conocimiento digital y hardware abierto en Tierra del Fuego.
             </p>
         </section>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
             <div class="bg-white rounded-3xl overflow-hidden shadow-md border-t-8 border-[#a8dadc] card-container">
                 <div class="card-img-container img-inicial"></div>
                 <div class="p-6">
@@ -129,7 +126,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="mt-16 text-center">
